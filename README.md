@@ -83,12 +83,6 @@ Python · pandas · NumPy · scikit-learn · XGBoost · matplotlib · seaborn ·
 
 ---
 
-## 📝 Caveats
-
-This is a **predictive model**, not a causal analysis. High feature importance for session frequency and playtime indicates these features are useful for *prediction*, not necessarily that increasing them causes higher engagement. Any business intervention based on this model should be validated through controlled testing before scaling.
-
----
-
 ## 👤 Author
 
 **Ajo Alenjeen**
