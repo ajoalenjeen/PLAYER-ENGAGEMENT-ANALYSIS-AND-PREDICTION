@@ -12,6 +12,17 @@ Predict player engagement levels (High / Medium / Low) using behavioral and demo
 
 ---
 
+## 📈 Model Performance
+
+| Model              | Accuracy | AUC    |
+|-------------------|---------:|-------:|
+| XGBoost           | **91.88%** | 0.9461 |
+| Random Forest     | 91.48%   | 0.9441 |
+| LightGBM          | 91.27%   | **0.9464** |
+
+
+XGBoost outperformed Random Forest and LightGBM on this multi-class engagement prediction task. The top features driving predictions were SessionsPerWeek and AvgSessionDurationMinutes — confirming that *behavioral activity* signals dominate over demographic features.
+
 ## 🔑 Key Findings
 
 1. **Session frequency and playtime are the strongest engagement predictors.** Feature importance analysis ranks behavioral metrics far above demographic features — how players *behave* matters more than who they *are*.
