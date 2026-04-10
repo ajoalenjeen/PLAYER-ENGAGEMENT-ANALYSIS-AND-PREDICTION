@@ -23,6 +23,8 @@ Predict player engagement levels (High / Medium / Low) using behavioral and demo
 
 XGBoost outperformed Random Forest and LightGBM on this multi-class engagement prediction task. The top features driving predictions were SessionsPerWeek and AvgSessionDurationMinutes — confirming that *behavioral activity* signals dominate over demographic features.
 
+---
+
 ## 🔑 Key Findings
 
 1. **SessionsPerWeek is the dominant predictor of engagement**, followed by AvgSessionDurationMinutes. *How often* and *how long* players engage is the single strongest signal of engagement level.
@@ -38,6 +40,15 @@ XGBoost outperformed Random Forest and LightGBM on this multi-class engagement p
 
 ---
 
+## 📈 Recommendations
+
+1. **Track session frequency as the primary engagement health metric.** Flag players whose weekly session count drops below threshold for re-engagement.
+2. **Use session duration as a secondary signal.** Short sessions + low frequency = early churn warning.
+3. **Deprioritize demographic targeting** in favor of behavior-based segmentation.
+4. **A/B test in-game purchase incentives** — the model suggests they may not be the most effective retention lever.
+
+---
+
 ## 🛠️ Methods Used
 
 - **Exploratory Data Analysis** — distributions, skewness/kurtosis analysis, categorical breakdowns
@@ -47,15 +58,6 @@ XGBoost outperformed Random Forest and LightGBM on this multi-class engagement p
 - **Model Evaluation** — accuracy, classification report, ROC-AUC
 - **Feature Importance Analysis** — identifying the behavioral drivers of engagement
 
----
-
-## 📈 Recommendations
-
-1. **Track session frequency as the primary engagement health metric.** Flag players whose weekly session count drops below threshold for re-engagement.
-2. **Use session duration as a secondary signal.** Short sessions + low frequency = early churn warning.
-3. **Deprioritize demographic targeting** in favor of behavior-based segmentation.
-4. **A/B test in-game purchase incentives** — the model suggests they may not be the most effective retention lever.
-   
 ---
 
 ## 📂 Repository Structure
