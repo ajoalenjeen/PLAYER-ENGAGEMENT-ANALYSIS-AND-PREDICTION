@@ -1,7 +1,5 @@
 # PLAYER-ENGAGEMENT-ANALYSIS-AND-PREDICTION
 
-# Player Engagement Analysis & Prediction
-
 ### Predicting Online Gaming Engagement to Inform Retention Strategy
 
 A machine learning project that analyzes online gaming behavior to predict player engagement levels and identify the behavioral signals that drive retention.
