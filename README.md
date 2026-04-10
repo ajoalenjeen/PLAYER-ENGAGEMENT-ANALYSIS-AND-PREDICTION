@@ -25,13 +25,16 @@ XGBoost outperformed Random Forest and LightGBM on this multi-class engagement p
 
 ## 🔑 Key Findings
 
-1. **Session frequency and playtime are the strongest engagement predictors.** Feature importance analysis ranks behavioral metrics far above demographic features — how players *behave* matters more than who they *are*.
+1. **SessionsPerWeek is the dominant predictor of engagement**, followed by AvgSessionDurationMinutes. *How often* and *how long* players engage is the single strongest signal of engagement level.
 
-2. **In-game purchase behavior correlates strongly with engagement level.** Players who make in-game purchases are disproportionately concentrated in the high-engagement group, suggesting purchases are both a *signal* of engagement and a potential *driver*.
+2. **AchievementsUnlocked and PlayerLevel are secondary drivers.** Progression metrics matter, but well below raw activity metrics.
 
-3. **Demographic features (age, gender, location) have minimal predictive power.** This is a useful negative finding — retention efforts should focus on behavioral interventions, not demographic targeting.
+3. **Demographics (Age, Gender, Location) have minimal predictive power** — retention efforts should focus on behavioral interventions, not demographic targeting.
 
-4. **Random Forest and XGBoost both achieve strong classification performance**, with tree-based models outperforming linear baselines on this multi-class engagement task.
+4. **In-game purchases matter only marginally.** Counterintuitive given the assumption that purchasers should be more engaged — worth investigating further.
+
+5. **Tree-based models (Random Forest, XGBoost) outperformed linear baselines** on this multi-class engagement task.
+
 
 ---
 
@@ -48,12 +51,11 @@ XGBoost outperformed Random Forest and LightGBM on this multi-class engagement p
 
 ## 📈 Recommendations
 
-Based on the model and feature importance analysis, a gaming company could:
-
-1. **Flag low-engagement players in their first 1-2 weeks** based on session frequency thresholds, and target them with personalized re-engagement campaigns before churn occurs.
-2. **Offer in-game purchase incentives** to medium-engagement players to nudge them toward the high-engagement segment.
-3. **Deprioritize demographic-based targeting** in favor of behavior-based segmentation, since demographic features showed minimal predictive value.
-
+1. **Track session frequency as the primary engagement health metric.** Flag players whose weekly session count drops below threshold for re-engagement.
+2. **Use session duration as a secondary signal.** Short sessions + low frequency = early churn warning.
+3. **Deprioritize demographic targeting** in favor of behavior-based segmentation.
+4. **A/B test in-game purchase incentives** — the model suggests they may not be the most effective retention lever.
+   
 ---
 
 ## 📂 Repository Structure
