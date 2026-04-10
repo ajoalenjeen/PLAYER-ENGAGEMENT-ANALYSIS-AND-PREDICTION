@@ -97,6 +97,6 @@ Python · pandas · NumPy · scikit-learn · XGBoost · matplotlib · seaborn ·
 
 ## 👤 Author
 
-**Ajo Alenjeen**
+**Ajo Alen Jeen**
 MBA Candidate, Business Analytics — Pace University
 [LinkedIn](https://www.linkedin.com/in/ajoalenjeen/) · [Portfolio](https://github.com/ajoalenjeen)
