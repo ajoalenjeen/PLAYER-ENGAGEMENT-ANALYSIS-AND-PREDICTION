@@ -45,7 +45,6 @@ XGBoost outperformed Random Forest and LightGBM on this multi-class engagement p
 1. **Track session frequency as the primary engagement health metric.** Flag players whose weekly session count drops below threshold for re-engagement.
 2. **Use session duration as a secondary signal.** Short sessions + low frequency = early churn warning.
 3. **Deprioritize demographic targeting** in favor of behavior-based segmentation.
-4. **A/B test in-game purchase incentives** — the model suggests they may not be the most effective retention lever.
 
 ---
 
